@@ -1,0 +1,73 @@
+@use "./_variables" as *;
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    padding: 16px;
+
+    .MuiAutocomplete-root {
+        width: 100%;
+        background-color: $background-color;
+        border-radius: 10px;
+
+        .MuiOutlinedInput-root {
+            border-radius: 10px;
+            padding: 0;
+            height: 50px;
+            font-size: 14px;
+        }
+
+        .MuiAutocomplete-popper {
+            z-index: 1300;
+            margin-top: 8px;
+            border-radius: 30px !important;
+
+            .MuiPaper-root {
+                border-radius: 50px !important;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                background-color: #ffffff;
+
+                .MuiAutocomplete-noOptions {
+                    background-color: #ffe0e0;
+                    padding: 10px;
+                    color: #888;
+                }
+
+                .MuiAutocomplete-option {
+                    font-size: 14px;
+                    padding: 8px 12px;
+
+                    &:hover {
+                        background-color: #f0f0f0;
+                    }
+
+                    &[aria-selected="true"] {
+                        background-color: #e0f7fa;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .MuiChip-root {
+        margin: 4px 4px 0 0;
+        background-color: #e0f7fa;
+        color: #00796b;
+        font-size: 13px;
+
+        .MuiChip-deleteIcon {
+            color: inherit;
+        }
+    }
+
+    .MuiButton-outlined {
+        border-color: #007aff;
+        color: #007aff;
+        font-size: 14px;
+        margin-top: 16px;
+    }
+}

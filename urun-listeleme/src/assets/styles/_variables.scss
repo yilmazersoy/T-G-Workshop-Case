@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #000;
+    --background-color: #fff;
+    --white: #fff;
+    --text-color: #222;
+    --button: #673ab7;
+    --grey: #ccc;
+}
+
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$background-color: var(--background-color);
+$text-color: var(--text-color);
+$white: var(--white);
+$button: var(--button);
+$grey: var(--grey);
